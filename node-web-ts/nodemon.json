@@ -1,0 +1,6 @@
+{
+  "watch": ["**/*.ts"],
+  "ext": "ts,json",
+  "ignore": ["./test/*.ts"],
+  "exec": "node --env-file=development.env dist/index.js"
+}
