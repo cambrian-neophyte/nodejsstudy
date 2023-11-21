@@ -1,0 +1,10 @@
+html
+  head 
+    title= 'Kafka Messages'
+  body 
+    h1= 'Send Messages to Kafka'
+    p= 'Use the form to send a message.'
+    form(action="/message", method="post")
+      input(type="text", name="msg")
+      input(type="submit", value="Submit")
+    a(href='/log')= 'Log'

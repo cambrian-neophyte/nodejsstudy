@@ -1,0 +1,9 @@
+html 
+    head 
+        title
+         New Messages  
+    body 
+        p Those messages were sent recently: 
+    each m in messages 
+        h3= 'Message '+m.offset+' '+ m.timestamp
+        p= m.text 
