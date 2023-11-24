@@ -1,9 +1,15 @@
 html 
     head 
-        title
-         New Messages  
-    body 
+        title New Messages
+        link(rel='stylesheet' href='style.css')  
+    body
+     
         p Those messages were sent recently: 
-    each m in messages 
-        h3= 'Message '+m.offset+' '+ m.timestamp
-        p= m.text 
+        each m, i in messages 
+            div
+                h3= 'Message '+m.offset+' '+ m.timestamp
+                p= m.text
+        h2 WebSocket Status
+        p(class='connected')
+        div(id='logcontainer')
+        script(src="ws.js")

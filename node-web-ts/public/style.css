@@ -1,0 +1,19 @@
+div {
+    margin: 1em;
+}
+
+.logitem {
+    opacity: 0;
+    animation: fadein 150ms ease-in 150ms 1 normal forwards;
+    
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0.0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
